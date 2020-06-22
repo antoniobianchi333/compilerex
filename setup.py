@@ -20,6 +20,6 @@ setup(
     install_requires=[
         'python-magic'
     ],
-    package_data={'compilerex': ['scripts/*', 'bin/*']},
+    package_data={'compilerex': ['scripts/*', 'bin/*', 'lib/*']},
     cmdclass={'build': build}
 )
