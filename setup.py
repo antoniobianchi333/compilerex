@@ -9,7 +9,7 @@ BIN_PATH = "bin"
 class build(_build):
     def run(self):
         for f in os.listdir(BIN_PATH):
-            os.chmod(os.path.join("bin", f), 0o777)
+            os.chmod(os.path.join("compilerex/bin", f), 0o777)
 
 
 setup(
@@ -19,5 +19,5 @@ setup(
     install_requires=[
         'python-magic'
     ],
-    cmdclass={'build': build}
+    #cmdclass={'build': build}
 )
