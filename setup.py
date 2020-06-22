@@ -19,10 +19,5 @@ setup(
     install_requires=[
         'python-magic'
     ],
-    package_data={
-        'bin': [
-            'bin/*',
-        ]
-    },
     cmdclass={'build': build}
 )
