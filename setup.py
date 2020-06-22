@@ -3,13 +3,12 @@ from distutils.command.build import build as _build
 import os
 
 
-BIN_PATH = "bin"
 
 
 class build(_build):
     def run(self):
-        for f in os.listdir(BIN_PATH):
-            os.chmod(os.path.join("compilerex/bin", f), 0o777)
+        for f in os.listdir("bin/"):
+            os.chmod(os.path.join("bin/", f), 0o777)
 
 
 setup(
@@ -20,5 +19,5 @@ setup(
         'python-magic'
     ],
     package_data={'compilerex': ['scripts/*', 'bin/*']},
-    #cmdclass={'build': build}
+    cmdclass={'build': build}
 )
