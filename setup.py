@@ -7,8 +7,8 @@ import os
 
 class build(_build):
     def run(self):
-        for f in os.listdir("bin/"):
-            os.chmod(os.path.join("bin/", f), 0o777)
+        for f in os.listdir("compilerex/bin/"):
+            os.chmod(os.path.join("compilerex/bin/", f), 0o777)
 
 
 setup(
